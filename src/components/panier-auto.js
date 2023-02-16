@@ -3,6 +3,8 @@ import '../styles/body-auto.css'
 import ListAnnonce from './list-annonce';
 import Panier from './panier';
 import CommandeService from './../services/commande';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function BodyAuto() {
 
@@ -12,18 +14,19 @@ function BodyAuto() {
     }
     setpanier([]);
   }
+
   const [totalPrice, setTotalPrice] = useState(0);
   const [commandeInProgress, setCommandeInProgress] = useState(false)
   const [panier, setpanier] = useState([]);
 
   const commander = () => {
     CommandeService.commander(panier)
-      .then((res) => {
+      .then(() => {
         setCommandeInProgress(true);
-        console.log('commande en cours');
-      }).catch((err) => {
-        console.log(err);
-      })
+        toast.success("Commande Envoyée");
+      }).catch(() => {
+        toast.warn("Commande non Envoyée !");
+      });
   }
 
 
@@ -49,6 +52,7 @@ function BodyAuto() {
         panier={panier}
         setpanier={setpanier}
       />
+      <ToastContainer />
     </div>
   </div>
 }
