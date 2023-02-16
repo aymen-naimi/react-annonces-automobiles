@@ -1,0 +1,15 @@
+.panier-auto__container {
+    display: flex;
+    flex-flow: row;   
+  }
+  
+  .panier-auto {
+    width: 230px;
+    background-color: lightblue;
+    min-height: 400px;
+    padding: 25px;
+  }
+
+  .item-panier {
+    padding: 5px;
+  }

@@ -1,0 +1,26 @@
+[
+    {
+        "marque": "renault",
+        "modele": "espace",
+        "immatriculation": "1 janvier 2023",
+        "carburant": "essence",
+        "price": 11000,
+        "url": "images/renault-espace.jpg"
+    },
+    {
+        "marque": "renault",
+        "modele": "scenic",
+        "immatriculation": "2 janvier 2023",
+        "carburant": "diesel",
+        "price": 12000,
+        "url": "images/renault-scenic.jpg"
+    },
+    {
+        "marque": "renault",
+        "modele": "twingo",
+        "immatriculation": "3 janvier 2023",
+        "carburant": "essence",
+        "price": 13000,
+        "url": "images/renault-twingo.jpg"
+    }
+]

@@ -1,0 +1,31 @@
+.list-annonce {
+    padding: 25px;
+	left: 300px;
+    position: absolute;
+  }
+
+  .img-auto {
+	height: 250px;
+	width: 250px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.item {
+	width: 600px;
+    display: flex;
+    padding: 20px;
+}
+
+.description {
+	padding: 10px;
+}
+.td-text { 
+	text-align: right;
+	width: 200px;
+	padding-right: 20px; 
+}
+
+.td-value { 
+	text-align: left;
+}
