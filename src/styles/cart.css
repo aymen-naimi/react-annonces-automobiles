@@ -1,10 +1,10 @@
-.panier-auto {
+.body-auto {
     width: 230px;
     background-color: lightblue;
     min-height: 400px;
     padding: 25px;
 }
 
-.item-panier {
+.item-cart {
     padding: 5px;
 }

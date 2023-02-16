@@ -1,12 +1,12 @@
 import './App.css';
-import HeaderAuto from './components/header-auto';
-import BodyAuto from './components/panier-auto';
+import Header from './components/header';
+import Body from './components/body';
 
 function App() {
   return (
     <div className="App">
-      <HeaderAuto />
-      <BodyAuto />
+      <Header />
+      <Body />
 
     </div>
   );

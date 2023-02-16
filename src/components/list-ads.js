@@ -1,22 +1,22 @@
-import '../styles/list-annonce.css';
+import '../styles/list-ads.css';
 import { useState, useEffect } from "react";
+import OrderService from '../services/commande';
 
-function ListAnnonce({panier, setpanier}) {
-        const [annonces, setAnnonces] = useState([]);
+function ListAds({cart, setcart}) {
+        const [ads, setAds] = useState([]);
         const addItem = (item) => {
-                setpanier([...panier, item]);
+                setcart([...cart, item]);
         }
         useEffect(() => {
-                fetch('products/products.json')
-                        .then(res => res.json())
-                        .then((response) => {
-                                setAnnonces(response);
+                OrderService.getAdsList()
+                        .then((adsList) => {
+                                setAds(adsList);
                         });
         }, []);
 
-        return <div className='list-annonce'>
+        return <div className='list-ads'>
                 {
-                        annonces.map((item, index) => (
+                        ads.map((item, index) => (
                                 <div className='item' key={index}>
                                         <img className='img-auto' src={item.url} alt={item.url} />
                                         <div className="description">
@@ -54,4 +54,4 @@ function ListAnnonce({panier, setpanier}) {
         </div>
 }
 
-export default ListAnnonce
+export default ListAds

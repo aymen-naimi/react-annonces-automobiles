@@ -1,0 +1,8 @@
+.body__container {
+  display: flex;
+  flex-flow: row;
+}
+
+.item-cart {
+  padding: 5px;
+}

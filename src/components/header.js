@@ -1,6 +1,6 @@
-import '../styles/header-auto.css'
+import '../styles/header.css'
 
-function HeaderAuto() {
+function Header() {
 	return <div className='header-auto'>
 		<div className="header-auto-text">
 			Annonce  auto
@@ -8,4 +8,4 @@ function HeaderAuto() {
 		</div>
 }
 
-export default HeaderAuto
+export default Header
